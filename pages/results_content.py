@@ -7,11 +7,11 @@ def display_results_content(set_page):
     active_features_home = st.session_state.get('active_features', [])
 
     col_title, col_back = st.columns([0.75, 0.25])
-    with col_title:
-        st.subheader(f"{page_title}")
     with col_back:
         if st.button("Return to Home Page", use_container_width=True, type="primary"):
             set_page('home')
+    with col_title:
+        st.subheader(f"{page_title}")
 
     df = pd.read_csv('data/tools.csv', sep=';')
     
