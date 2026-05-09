@@ -50,7 +50,7 @@ def display_home_content(set_page):
     with col5:
         st.subheader("💻", text_alignment="center")
         if st.button("Integrate my own AI model", width="stretch"):
-            st.session_state.target_filter = "ai_integration"
+            st.session_state.active_features = ['ai_integration']
             st.session_state.page_title = "💻 Integrate my own AI model"
             st.session_state.page_caption = "Showing flexible platforms that allow the integration and deployment of custom-made AI models."
             set_page('results')
@@ -58,7 +58,7 @@ def display_home_content(set_page):
     with col6:
         st.subheader("📂", text_alignment="center")
         if st.button("Browse all available tools and sites", width="stretch"):
-            st.session_state.target_filter = all_features
+            st.session_state.active_features = []
             st.session_state.page_title = "📂 Browse all available tools and sites"
             st.session_state.page_caption = "Showing the complete database of web-based drug discovery interfaces and computational tools."
             set_page('results')
