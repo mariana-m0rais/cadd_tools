@@ -1,0 +1,18 @@
+[theme]
+primaryColor = "#1d2b3c"
+backgroundColor = "#cdd7e1"
+secondaryBackgroundColor = "#1d2b3c"
+
+textColor = "#1a1a1a"
+font = "sans-serif"
+headingFont ="serif"
+
+baseRadius = "0.5rem"
+buttonRadius = "10px"
+
+[client]
+toolbarMode = "viewer"
+showSidebarNavigation = false
+
+[theme.sidebar]
+textColor ="#cdd7e1"

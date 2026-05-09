@@ -1,0 +1,59 @@
+﻿id;name;primary_focus;url;ai_integration;de_novo;optimization;properties_prediction;bioactivity_prediction;synthesizability;target_fishing;docking;retrosynthesis;virtual_screening;chemical_space_map;representation;other_functions;access_type;company
+1;BMaps;Fragment-Based Drug Design;https://app.boltzmannmaps.com/app/bmaps.html?preview=;false;false;true;true;false;false;false;true;false;false;true;2D;Water/Hot-Spot Mapping, Energy Minimization;open;none
+2;XunDrug;Drug design (Property Prediction + Structure-based design);https://xundrug.cn/;false;true;true;true;false;false;false;false;false;false;false;2D, 3D;"Structure-based drug design by fragment replacement/molecular hybridization/fragment growing; Structure based macrocycle design; ";open;none
+3;WADDAICA;Modification/design of new novel drugs;https://heisenberg.ucam.edu:5000/;false;true;true;true;false;false;false;true;false;false;false;3D;-;open;none
+4;LigAdvisor;De Novo Ligand Design ;https://ligadvisor.unimore.it/;false;false;false;false;false;false;true;false;false;false;false;false;"Ligand-design; Hit and lead optimization; Drug repurposing; Polypharmacology ligand-Based profiling";open;none
+5;DrugFlow;De Novo Design, Molecular Optimization, and Virtual Screening;https://drugflow.com/#/;true;true;true;true;true;true;false;true;false;false;true;2D,3D;-;open;none
+6;MolProphet;De Novo Design, Molecular Optimization, and Virtual Screening;https://app.molprophet.com/login;false;false;true;true;false;false;false;true;true;true;true;2D, 3D;"Scaffold Hopping; Fragment Optimization; R-goup Optimization";open;none
+7;SwissSimilarity;Virtual Screening;http://www.swisssimilarity.ch/index.php;false;false;false;false;false;true;false;false;false;true;false;false;-;open;none
+8;PacDOCK;Analysis of docking results;https://pegasus.lbic.unibo.it/pacdock/index.php;false;false;false;false;false;false;false;false;false;false;false;3D;Comparison of molecular conformations, luster analysis of docking results;open;none
+9;SwissDock;Docking;https://www.swissdock.ch/index.php;false;false;false;false;false;false;false;true;false;false;false;2D, 3D;-;open;none
+10;DrugRep;Virtual Screening for Drug Repurposing;http://cao.labshare.cn/drugrep/;false;false;false;false;false;false;false;true;false;true;false;3D;-;open;none
+11;Qsarna;Docking, Virtual Screening;https://qsarna.com;true;false;false;true;false;false;false;true;false;true;false;2D;Fragment-Based Drug Design, Collaboration support, User management;open;none
+12;SeamDock;Docking tools for small molecules;https://bioserv.rpbs.univ-paris-diderot.fr/services/SeamDock/;false;false;false;false;false;false;false;true;false;false;false;3D;-;open;none
+13;MolMod;Molecular Property Optimization via fragment-based generation;http://software.tdd-lab.com/molmod;false;false;true;true;false;false;false;false;false;false;false;false;-;open;none
+14;CODD-Pred;Optimization of small molecules with specific target activity;https://fca_icdb.mpu.edu.mo/codd/;false;false;false;true;false;false;true;false;false;false;false;2D;-;open;none
+15;ChemMORT;Multi-parameter optimization;https://cadd.nscc-tj.cn/deploy/chemmort/;false;false;true;true;false;false;false;false;false;false;false;2D;"SMILES Encoder;";open;none
+16;DeepFrag;Ligand/Lead Optimization, Fragment Linking;https://durrantlab.pitt.edu/deepfrag/;false;false;true;false;false;false;false;false;false;false;false;2D, 3D;Add novel fragments to an identified lead;open;none
+17;MolFrag;Molecular Fragmentation ;https://dpai.ccnu.edu.cn/MolFrag/#/service/molFrag;false;false;false;true;false;false;false;false;false;false;false;2D;-;open;none
+18;DREAMM;Prediction of protein–membrane interfaces and nearby binding pockets;https://dreamm.ni4os.eu/;false;false;false;false;false;false;true;false;false;false;false;3D;-;open;none
+19;InDeepNet;Protein-protein interaction drug discovery;https://indeep-net.gpu.pasteur.cloud/;false;false;false;false;false;false;false;false;false;false;false;false;" Target structural properties prediction; Protein binding site prediction";open;none
+20;DockThor-VS;Docking-based virtual screening for peptides;https://dockthor.lncc.br/v2/;false;false;false;false;true;false;false;true;false;true;false;3D;"Ranking of protein-ligand complexes;  Inspection of the intermolecular interaction with neighborhood residues";open;none
+21;PASSer;Allosteric Site Prediction;https://passer.smu.edu/;false;false;false;false;false;false;true;false;false;false;false;3D;;open;none
+22;cPEPmatch;Cyclic peptide design;https://t38webservices.nat.tum.de/cpepmatch/;false;true;false;false;true;false;true;false;false;false;false;3D;"Hotspot/interface residue selection; Side-chain mutation & refinement;
+Filtering for structural similarity; Optional evaluation for binding stability";open;none
+23;PrankWeb;Ligand-binding site prediction for Proteins;https://prankweb.cz/;false;false;false;false;true;false;true;false;false;false;true;2D, 3D;-;open;none
+24;OptADMET;Lead optimization (ADMET-driven);https://cadd.nscc-tj.cn/deploy/optadmet/;false;false;true;true;false;false;false;false;false;false;false;2D;-;open;none
+25;admetSAR3.0;Chemical ADMET assessment;http://lmmd.ecust.edu.cn/admetsar3/;false;false;true;true;false;false;false;false;false;false;false;2D;-;open;none
+26;MolPredictX;Bioactivity prediction against multiple pathogens/targets;https://www.molpredictX.ufpb.br/;false;false;false;false;true;false;false;false;false;false;false;false;-;open;none
+27;CidalsDB;Anti-(specific)pathogen biological Activity Prediction;https://cidalsdb.streamlit.app/;false;false;false;false;true;false;false;false;false;false;false;3D;-;open;none
+28;DyeLeS;Prediction of fluorescence properties;https://dyeles.molastra.com/;false;false;false;true;false;false;false;false;false;false;false;2D;-;open;none
+29;SwissADME;Computing physicochemical descriptors and predicting ADME parameters;http://www.swissadme.ch/index.php;false;false;false;true;false;false;false;false;false;false;false;2D;-;open;none
+30;VenomPred 2.0;Multi-endpoint toxicity prediction & toxicophore identification;https://www.mmvsl.it/wp/venompred2/;false;false;false;true;false;false;false;false;false;false;false;2D;-;open;none
+31;LabMol InsightAI;Cytotoxicity prediction & QSAR modeling;https://insightai.labmol.com.br/;false;false;false;true;false;false;false;false;false;true;false;false;-;open;none
+32;CLC-Pred 2.0;Cytotoxicity and Mechanism of Action Prediction;https://way2drug.com/clc-pred/;false;false;false;true;false;false;false;false;false;false;false;2D;-;open;none
+33;DeepCancerMap;Cancer cell- and Target-based activity prediction and selectivity prediction;https://deepcancermap.idruglab.cn/#/home;false;false;false;false;true;false;true;false;false;true;false;2D;Molecular Similarity Search;open;none
+34;DeepAR;Androgen Receptor antagonist prediction;http://pmlabstack.pythonanywhere.com/DeepAR;false;false;false;false;true;false;false;false;false;false;false;false;-;open;none
+35;MedChem Designer;Chemical Structure Drawing and Property Prediction;https://www.simulations-plus.com/software/medchem-designer/;false;false;false;true;false;false;false;false;false;false;false;2D;;open;none
+36;ChemoPredictionSuite;Predicting bioactivity of compounds;https://chemopredictionsuite.com/;false;false;false;true;true;false;false;true;false;false;false;2D;-;open;none
+37;PLATO;Target selection and Bioactivity Profiling;http://plato.uniba.it/plato/;false;false;false;false;true;false;true;false;false;false;false;2D;-;open;none
+38;SwissTargetPrediction;Target Prediction;https://www.swisstargetprediction.ch/index.php;false;false;false;false;false;false;true;false;false;false;false;2D;-;open;none
+39;Drugst.One;Drug Repurposing / target and drug search wrapper;https://drugst.one/home;true;false;false;false;false;false;true;false;false;false;false;false;"Drug repurposing; Drug/target ranking;
+Interactive network visualization; Plugin integration and web embedding";open;none
+40;scDrugMap;Drug response prediction;https://scdrugmap.com/;false;false;false;false;true;false;false;false;false;false;false;false;-;open;none
+41;IBM RXN;Synthesis planning and Retrosynthesis;https://rxn.app.accelerate.science/rxn/sign-in;false;false;false;false;true;false;false;false;true;false;true;2D;"Predict reagents needed to convert given starting material to given product; Atom mapping";open;none
+42;READRetro web;Retrosynthesis of natural products;https://readretro.net/;false;false;false;false;false;false;false;false;true;false;false;false;-;open;none
+43;ChemoDOTS;Design of Chemistry-Driven Focused Libraries;https://chemodots.marseille.inserm.fr/;false;false;true;false;false;true;false;false;false;false;false;2D, 3D;"Automatic detection of reactive functions in input molecules; Proposal of compatible chemical transformations widely used in pharma industry";open;none
+44;PandaOmics;Therapeutic target and biomarker discovery;https://pharma.ai/pandaomics;false;false;false;false;false;false;true;false;false;false;false;false;"Dataset Selection and Sample Group Comparison Creation; Target Evaluation; Integration with Robotic Platforms";commercial;Insilico Medicine (pharma-AI platform)
+45;Chemistry42;De novo generation of novel small molecules;https://pharma.ai/chemistry42;false;true;true;true;false;true;false;false;true;true;false;2D/3D;"Model Training (use their models in user datasets); Scaffold Hopping / R-group Exploration / Core Anchoring; Off-target Prediction";commercial;
+46;AIDDISON;De novo drug generation;https://www.sigmaaldrich.com/PT/en/services/software-and-digital-platforms/aiddison-ai-powered-drug-discovery;false;true;true;true;true;true;false;true;true;true;true;2D, 3D;-;commercial;Merck KGaA (Sigma-Aldrich Solutions)
+47;ChemAIRS;Retrosynthesis ;https://www.chemical.ai/chemairs;false;false;true;true;false;true;false;false;true;false;false;false;-;commercial;Chemical.AI
+48;ADMETPredictor;Predict ADMET properties ;https://www.simulations-plus.com/software/admetpredictor/;false;false;true;true;true;false;false;false;false;false;false;2D;-;commercial;SimulationsPlus
+49;alvaRunner;Deploy QSAR models / predictions;https://www.alvascience.com/alvarunner/;false;false;false;true;true;false;false;false;false;false;false;2D;-;commercial;alsvascience
+50;alvaBuilder;De novo molecular design (via property-guided generation);https://www.alvascience.com/alvabuilder/;false;true;true;false;false;false;false;false;false;false;false;2D;-;commercial;
+51;alvaDesc;Calculation of a wide range of molecular descriptors;https://www.alvascience.com/alvadesc/;false;false;false;true;false;false;false;false;false;false;false;2D;-;commercial;
+52;SYNTELLY;Searching, processing and analyzing chemical information;https://syntelly.com/;false;false;false;true;true;false;false;false;true;false;false;2D, 3D;Analysing different types of spectra of chemical compounds;commercial;SYNTELLY
+53;MoleculeAI;Modification outcome prediction;https://www.cognistx.com/smart-molecule-ai;false;true;true;true;false;false;false;false;false;false;false;false;-;commercial;Cognistx
+54;XMolGen;Molecular Generation and Virtual Screening;https://en.xtalpi.com/xmolgen/;false;true;false;true;false;true;false;false;false;true;true;2D, 3D;"Library generation; ";commercial;Xtalpi
+55;Molecule Gen;De novo drug generation;https://moleculeai.com/products;false;true;true;true;false;false;false;false;false;true;false;false;-;commercial;Molecule AI
+56;SeeSAR;De novo drug generation;https://www.biosolveit.de/SeeSAR;false;false;false;true;true;false;true;true;false;false;true;2D, 3D;"Binding site prediction; Similarity Scanner between compounds; protein Editing ";commercial;BioSolveIT
