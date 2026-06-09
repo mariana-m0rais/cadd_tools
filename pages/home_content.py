@@ -2,6 +2,8 @@ import streamlit as st
 
 def display_home_content(set_page):
     st.markdown("<h1 style='text-align: center; margin-bottom: 20px;'>What is your current Drug Discovery goal?</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: gray; margin-bottom: 15px;'>Discover the most appropriate computational tools for your workflow.</p>", unsafe_allow_html=True)
+    
     all_features = [
         'ai_integration', 'de_novo', 'optimization', 'properties_prediction',
         'bioactivity_prediction', 'synthesizability', 'target_fishing',

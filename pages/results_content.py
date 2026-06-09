@@ -51,17 +51,40 @@ def display_results_content(set_page):
     num_total = len(results_df)
 
     st.write(f"{page_caption} You can further filter the results using the sidebar options.")
+    if not results_df.empty:
+        exact_links = []
+        partial_links = []
+        all_links = []
 
-    if selected_features:
-        if num_recommended > 0:
-            st.write(f"**{num_recommended} tools exactly match your filters.**")
-            if num_total > num_recommended:
-                st.write(f"Showing also {num_total - num_recommended} tools that match some of your criteria.")
+        for _, row in results_df.iterrows():
+            anchor_id = str(row['name']).lower().replace(" ", "-")
+            link_md = f"[{row['name']}](#{anchor_id})"
+            
+            all_links.append(link_md)
+            
+            is_rec = selected_features and row['match_count'] == len(selected_features)
+            if is_rec:
+                exact_links.append(link_md)
+            else:
+                partial_links.append(link_md)
+
+        if selected_features:
+            if num_recommended > 0:
+                exact_str = " | ".join(exact_links)
+                st.write(f"**{num_recommended} tools exactly match your filters:** {exact_str}")
+                
+                if num_total > num_recommended:
+                    partial_str = " | ".join(partial_links)
+                    st.write(f"Showing also {num_total - num_recommended} tools that match some of your criteria: {partial_str}")
+            else:
+                partial_str = " | ".join(partial_links)
+                st.write("**There are no tools with that specific combination of filters.**")
+                st.write(f"However, showing {num_total} tools that match at least one of your chosen filters: {partial_str}")
         else:
-            st.write("**There are no tools with that specific combination of filters.**")
-            st.write(f"However, showing {num_total} tools that match at least one of your chosen filters.")
-    else:
-        st.write(f"**Number of tools found: {num_total}**")
+            all_str = " | ".join(all_links)
+            st.write(f"**Number of tools found: {num_total}** ({all_str})")
+            
+        st.write("") 
 
     grid_col1, grid_col2 = st.columns(2)
     
@@ -70,7 +93,13 @@ def display_results_content(set_page):
         
         with target_col:
             with st.container(border=True):
-                header_col, rec_col, tag_col = st.columns([0.7,0.50, 0.30], gap="xxsmall")
+                anchor_id = str(row['name']).lower().replace(" ", "-")
+                st.markdown(
+                    f"<div id='{anchor_id}' style='position: relative; top: -80px; visibility: hidden;'></div>", 
+                    unsafe_allow_html=True
+                )
+                
+                header_col, rec_col, tag_col = st.columns([0.7, 0.50, 0.30], gap="xxsmall")
             
                 with header_col:
                     st.markdown(f"### {row['name']}")
@@ -89,20 +118,19 @@ def display_results_content(set_page):
                         st.badge("Open Access", color="green")
                     else:
                         st.badge("Commercial", color="red")
+                
                 st.markdown(f"**Focus:** *{row['primary_focus']}*")
                 
-                # Tags de Features
                 tags = [f"`{c.replace('_', ' ')}`" for c in feat_cols if row[c] == True]
                 if tags:
                     st.markdown(f"**Features:** {' '.join(tags)}")
                 
-                # Funções Adicionais
                 other_func = str(row['other_functions']).strip()
-                if other_func and other_func not in ["-", "nan", "None", "nan"]:
+                if other_func and other_func not in ["-", "nan", "None"]:
                     with st.expander("Additional Functions"):
                         st.write(other_func)
                 
-                st.write("") # Espaçador
+                st.write("") 
                 st.link_button(f"Go to {row['name']}", row['url'], use_container_width=True)
 
     if results_df.empty:
