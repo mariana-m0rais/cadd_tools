@@ -1,7 +1,10 @@
 # CADD Tool Finder: A Unified Directory for Computer-Aided Drug Design Interfaces
 --------------------------------------------------------------
 
-![alt text](image.png)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0f9bd5a4-8678-4ada-89d4-cb1377db67b7" width="50%" alt="image" />
+</p>
+
 
 ## Context
 This project implements an interactive web application designed to serve as a unified, user-friendly registry for Computer-Aided Drug Design (CADD) platforms. Based on a structured scoping review of 62 curated computational suites, the system allows researchers to map functional coverage across the entire drug discovery pipeline. It features task-oriented exploration, a smart filter matching algorithm that prioritizes exact matches while displaying partial alternatives, and a high-speed inline index with automatic scroll offsets to prevent cognitive fatigue during extensive database searches.
