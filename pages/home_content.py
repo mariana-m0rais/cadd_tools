@@ -1,7 +1,7 @@
 import streamlit as st
 
 def display_home_content(set_page):
-    st.markdown("<h1 style='text-align: center; margin-bottom: 20px;'>What is your current Drug Discovery goal?</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;margin-top: -20px; margin-bottom: 20px;'>What is your current Drug Discovery goal?</h1>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center; color: gray; margin-bottom: 15px;'>Discover the most appropriate computational tools for your workflow.</p>", unsafe_allow_html=True)
     
     all_features = [
@@ -64,3 +64,17 @@ def display_home_content(set_page):
             st.session_state.page_title = "📂 Browse all available tools and sites"
             st.session_state.page_caption = "Showing the complete database of web-based drug discovery interfaces and computational tools."
             set_page('results')
+    st.markdown("<br><br>", unsafe_allow_html=True) # Dá espaço para respirar
+
+# Criar colunas para centrar os links no fundo
+    col1a, col2a, col3a = st.columns([1, 2, 1])
+    with col2a:
+        st.markdown(
+        """
+        <p style='text-align: center; color: #666666; font-size: 0.9rem;'>
+            CADD Tool Finder © 2026 | 
+            <a href='https://forms.gle/oSrtKcz56gYykcBv9' target='_blank' style='color: #4F8BF9; text-decoration: none;'>📝 Suggest a Tool & Feedback</a> 
+        </p>
+        """, 
+        unsafe_allow_html=True
+    )
